@@ -1,5 +1,5 @@
 module.exports = function (fn) {
-  return function (err) {
-  	fn(err);
+  return function (first) {
+  	fn(first);
   };
 };
