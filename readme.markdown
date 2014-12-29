@@ -4,7 +4,7 @@
 
 You know how you like chaining asynchronous function calls **but** sometimes weird arguments get in the way of your waterfall series with unpredictable arguments?
 
-How about attempting to `parseInt` in a `forEach` only to find out `forEach` spews three arguments?
+How about attempting to `parseInt` in a `map` only to find out `map` spews three arguments?
 
 # NO MORE!
 
@@ -15,6 +15,22 @@ npm install but --save
 # Usage
 
 Functional arguments giving you headaches?
+
+##### Before
+
+```js
+n.map(function (val) {
+  return parseInt(val);
+});
+```
+
+##### After
+
+```js
+n.map(but(parseInt));
+```
+
+Works on `.forEach` or any functional array method as well! Classy.
 
 ##### Before
 
