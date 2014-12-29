@@ -6,6 +6,8 @@ You know how you like chaining asynchronous function calls **but** sometimes wei
 
 How about attempting to `parseInt` in a `map` only to find out `map` spews three arguments?
 
+**But expands your functional horizons to the edge of the universe**
+
 # NO MORE!
 
 ```shell
