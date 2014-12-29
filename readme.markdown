@@ -1,12 +1,12 @@
 # but
 
+**But expands your functional horizons to the edge of the universe**
+
 > If only there was a way to pass along a callback with just a single argument.
 
 You know how you like chaining asynchronous function calls **but** sometimes weird arguments get in the way of your waterfall series with unpredictable arguments?
 
 How about attempting to `parseInt` in a `map` only to find out `map` spews three arguments?
-
-**But expands your functional horizons to the edge of the universe**
 
 # NO MORE!
 
