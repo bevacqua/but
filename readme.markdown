@@ -4,13 +4,35 @@
 
 You know how you like chaining asynchronous function calls **but** sometimes weird arguments get in the way of your waterfall series with unpredictable arguments?
 
+How about attempting to `parseInt` in a `forEach` only to find out `forEach` spews three arguments?
+
 # NO MORE!
 
 ```shell
 npm install but --save
 ```
 
-# Before
+# Usage
+
+Functional arguments giving you headaches?
+
+##### Before
+
+```js
+n.forEach(function (val) {
+  console.log(val);
+});
+```
+
+##### After
+
+```js
+n.forEach(but(console.log));
+```
+
+Mongoose being weird?
+
+##### Before
 
 ```js
 async.waterfall([
@@ -25,7 +47,7 @@ async.waterfall([
 ])
 ```
 
-# After
+##### After
 
 ```js
 async.waterfall([
