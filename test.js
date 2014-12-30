@@ -1,13 +1,25 @@
 'use strict';
 
+var assert = require('assert');
+
+
 var but = require('./');
 var n = [1, 2, 3, 4, 5];
-var m = ['1a', '2a', '3a', '4a', '5a'];
 
-n.forEach(console.log);
 
-n.forEach(but(console.log));
 
-m.map(parseInt).forEach(but(console.log));
 
-m.map(but(parseInt)).forEach(but(console.log));
+
+describe('a plain callback', function() {
+  var nMappedPlain = n.map(parseInt);
+  it('is terrible', function() {
+    assert(isNaN(nMappedPlain.pop()));
+  })
+});
+
+describe('a but callback', function() {
+  it('is awesome', function() {
+    var nMappedAwesome = n.map(but(parseInt));
+    assert(!isNaN(nMappedAwesome.pop()));
+  })
+});
