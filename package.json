@@ -3,7 +3,13 @@
   "version": "2.0.1",
   "description": "If only there was a way to pass along a callback with just a single argument.",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": "https://github.com/bevacqua/but.git",
   "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
 }
