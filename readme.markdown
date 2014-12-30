@@ -1,4 +1,4 @@
-# but
+# but [![Build Status][1]][2]
 
 **But expands your functional horizons to the edge of the universe**
 
@@ -85,3 +85,6 @@ It had to be done. It is known.
 # License
 
 MIT
+
+  [1]: https://travis-ci.org/bevacqua/but.png?branch=master
+  [2]: https://travis-ci.org/bevacqua/but
