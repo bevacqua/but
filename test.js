@@ -1,14 +1,8 @@
 'use strict';
 
 var assert = require('assert');
-
-
 var but = require('./');
 var n = [1, 2, 3, 4, 5];
-
-
-
-
 
 describe('a plain callback', function() {
   var nMappedPlain = n.map(parseInt);
