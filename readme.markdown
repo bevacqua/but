@@ -45,7 +45,7 @@ n.forEach(function (val) {
 ##### After
 
 ```js
-n.forEach(but(console.log));
+n.forEach(but(console.log.bind(console))); // you can omit bind on node.js
 ```
 
 Mongoose being weird?
