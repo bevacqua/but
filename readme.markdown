@@ -78,6 +78,29 @@ async.waterfall([
 ])
 ```
 
+## Targeted but
+
+Need to zone in and grab just a specific argument from a callback? Targeted `but` to the rescue.
+
+`but(callback, targetIndex)`
+
+This way you can pass callbacks and grab any given target index of the callback (and not just the first):
+
+##### Before
+
+```js
+// get an index array
+n.map(function (val, index) {
+  return parseInt(index);
+});
+```
+
+##### After
+
+```js
+n.map(but(parseInt, 1));
+```
+
 # Why?
 
 It had to be done. It is known.
