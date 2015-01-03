@@ -1,5 +1,6 @@
-module.exports = function (fn) {
+module.exports = function (fn, targetIndex) {
   return function (first) {
-    return fn(first);
+    if (typeof targetIndex !== 'number') return fn(first);
+    return fn(arguments[targetIndex]);
   };
 };
